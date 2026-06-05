@@ -20,11 +20,28 @@ public class Main {
                     System.out.println("Afficher (pas encore implémenté)");
                     break;
                 case 3:
-                    System.out.println("Rechercher (pas encore implémenté)");
+                        System.out.print("Entrer ID à rechercher : ");
+                    int idRecherche = sc.nextInt();
+                    boolean trouve = false;
+                    for (Etudiant et : liste) {
+                        if (et.id == idRecherche) {
+                            System.out.println("Étudiant trouvé :");
+                            et.afficher();
+                            trouve = true;
+                            break;
+                        }
+                    }
+                    if (!trouve) {
+                        System.out.println("Étudiant non trouvé.");
+                    }
                     break;
+
+                    // Supprimer un étudiant par I
+
                 case 4:
-                    System.out.println("Supprimer (pas encore implémenté)");
+                      System.out.println("Rechercher (pas encore implémenté)");
                     break;
+
             }
         } while (choix != 0);
         sc.close();
