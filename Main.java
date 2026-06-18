@@ -29,7 +29,9 @@ liste.add(e);
 System.out.println("Client ajouté !");
                     break;
                 case 2:
-                    System.out.println("Afficher (pas encore implémenté)");
+                    import java.util.ArrayList;
+// dans main()
+ArrayList<Etudiant> liste = new ArrayList<>();
                     break;
                 case 3:
                     System.out.println("Rechercher (pas encore implémenté)");
